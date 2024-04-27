@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 100px;
+}
+
+.profile-picture-container {
+  border: 2px solid #4f4d4d;
+  width: 150px; 
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.container-fluid{
+  background-color: #555
+}
+
+.image{
+  left: 0px;
+  width:100px;
+  height: 100px;
+}
+  
+.btn-sign up{
+  background-color: blue;
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid yellow;
+  color: white;
+  text-align: center;
+}
+  
+.btn-log in{
+  background-color: blue;
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid yellow;
+  color: white;
+  text-align: center;
+}
+
+.navbarContainer{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 0;
+}
+
+.btnSearch {
+  margin-right: 10px;
+  color: #2a2b2b;
+  border-color: #000000;
+  border-radius: 10%;
+}
+
+.btnSearch:active {
+  color: #fff;
+  background-color: #2a2b2b;
+  border-color: #000000;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btnSearch:disabled {
+  color: #2a2b2b;
+  background-color: transparent;
+  border-color: #000000;
+}
+
+.btnSearch:hover,
+.btnSearch:focus {
+  color: #fff;
+  background-color: #2a2b2b;
+  border-color: #000000;
+}
+
+.savedRecipes{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.recipeItem {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.recipeItem a {
+  color: black;
+  text-decoration: none;
+}
+
+.recipeItem a:hover {
+  color: black;
+}
+
+.btnContainer{
+  margin-top: 10px;
+}
+
+.profile-info{
+  margin-top:  10px;
+  margin-left: 15px;
+}
+
+.btnAddRecipe{
+  margin-right: 10px;
+}
+
+#root{
+  overflow-y: auto;
+}
+
+.homepageimages{
+  width: 200px;
+  height: 200px;
+}

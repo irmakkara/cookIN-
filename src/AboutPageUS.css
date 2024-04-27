@@ -1,0 +1,78 @@
+.hero{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .col{
+      width: 50%
+    }
+  }
+  
+  .hero .col {
+    padding-bottom: 30px; 
+  }
+  
+  .home-title{
+    text-align: center;
+    font-family: 'Garamond';
+    padding-top: 30px;
+  }
+  
+  .title{
+    font-family: 'Garamond', serif;
+    border-bottom: 1px solid #000;
+  }
+  
+  .text{
+    font-family: 'Garamond', serif;
+  }
+  
+  .footer{
+    background-color: gray;
+    color: #fff;
+    padding-block: 2em;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+  }
+
+  .footer-section p.title {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5em;
+    width: 20%;
+  }
+
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 0 20px;
+    align-items: start;
+    margin-right: 20px;
+    margin-left: 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-text{
+    font-family: 'Garamond';
+    font-size: 15px;
+  }
+  
+  .skills {
+    list-style-type: disc;
+  }
+
+  .skills li::marker {
+    color: gray;
+  }
+
+  .footerTitle{
+    font-family: 'Garamond', serif;
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
