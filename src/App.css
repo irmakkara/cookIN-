@@ -142,3 +142,8 @@
   width: 200px;
   height: 200px;
 }
+
+.homepagetitle{
+  font-family: 'Garamond', serif;
+  text-align: center;
+}

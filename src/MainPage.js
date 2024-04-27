@@ -58,6 +58,7 @@ function MainPage() {
         </Navbar.Collapse>
     </Navbar>
     <div className='savedRecipes' id='root'>
+    <h2 className='homepagetitle'>Recent Recipes</h2>
       {savedRecipes.map(recipe => (
         <div key={recipe.id} className="recipeItem">
           <img src={recipe.imageUrl} className='homepageimages'/>
