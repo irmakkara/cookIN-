@@ -3,28 +3,33 @@
     padding-bottom: 100px;
     padding-left: 30px;
     padding-right: 30px;
-    .col{
-      width: 50%
-    }
+    text-align: center;
+    place-items: center;
+    align-items: center;
   }
-  
-  .hero .col {
-    padding-bottom: 30px; 
-  }
-  
+
   .home-title{
     text-align: center;
     font-family: 'Garamond';
     padding-top: 30px;
+    place-items: center;
+    align-items: center;
   }
   
   .title{
     font-family: 'Garamond', serif;
     border-bottom: 1px solid #000;
+    width: 50%;
+    place-items: center;
+    text-align: center;
+    align-items: center;
   }
   
   .text{
     font-family: 'Garamond', serif;
+    place-items: center;
+    text-align: center;
+    align-items: center;
   }
   
   .footer{
@@ -75,4 +80,13 @@
     font-family: 'Garamond', serif;
     border-bottom: 1px solid #000;
     text-align: center;
+  }
+
+  .aboutusimages{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right:auto;
+    width: 300px; 
+    height: 300px;
+    place-items: center;
   }

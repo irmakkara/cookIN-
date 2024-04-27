@@ -2,6 +2,9 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cookINlogo from './images/cookINlogo.png';
+import sef from './images/sef.png';
+import sofra from './images/sofra.png';
+import tadim from './images/tadim.png.jpg';
 import './App.css';
 import './AboutPageUS.css';
 
@@ -43,24 +46,24 @@ function AboutUsPage() {
     </Navbar>
       <h1 className="home-title">What is cookIN' ?</h1>
       <div className="hero">
-        <div className="col">
+        <div>
           <h2 className="title">Cook delicious meals for yourself and your loved ones</h2>
           <p className="text">
             cookIN' is everyone's ultimate destination for discovering recipes. We believe that cooking should be enjoyable and accessible, that's why you can find any recipe based on the main ingredient, meal or event type, and even difficulty level. We aim to prove that everyone can be a chef of their own kitchen!
           </p>
-          {/* İlgili resimler buraya eklenecek */}
           <p className="text">
             Whether you're looking for inspiration, guidance, or simply a place to share your love of food, cookIN' is here to help you on your culinary journey.
           </p>
+          <img src={sofra} className='aboutusimages'/>
           <h4 className="text">Let's cook, create, and connect together!</h4>
-          {/* İlgili resimler buraya eklenecek */}
+          <img src={tadim} className='aboutusimages'/>
         </div>
-        <div className="col">
-          {/* İlgili resimler buraya eklenecek */}
+        <div>
           <h2 className="title">Connect with other Food Lovers</h2>
           <p className="text">
             cookIN' is more than just a recipe website. It's a community, a social platform for people who love to share their passion for cooking. You can add your own recipes to the website, save a recipe, like recipes, and comment on them by signing in. If you don't have an account, you can easily sign up!
           </p>
+          <img src={sef} className='aboutusimages'/>
           <div className="section-3">
             <div className="skills">
               <h2 className="title">Positive Aspects of cookIN'</h2>
