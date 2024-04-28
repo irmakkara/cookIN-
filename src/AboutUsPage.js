@@ -44,58 +44,72 @@ function AboutUsPage() {
           </form>
         </Navbar.Collapse>
     </Navbar>
-      <h1 className="home-title">What is cookIN' ?</h1>
-      <div className="hero">
+    <h1 className="home-title">What is cookIN' ?</h1>
+    <div className="container">
+      <div className="left-section">
         <div>
           <h2 className="title">Cook delicious meals for yourself and your loved ones</h2>
-          <p className="text">
-            cookIN' is everyone's ultimate destination for discovering recipes. We believe that cooking should be enjoyable and accessible, that's why you can find any recipe based on the main ingredient, meal or event type, and even difficulty level. We aim to prove that everyone can be a chef of their own kitchen!
-          </p>
-          <p className="text">
-            Whether you're looking for inspiration, guidance, or simply a place to share your love of food, cookIN' is here to help you on your culinary journey.
-          </p>
-          <img src={sofra} className='aboutusimages' alt=''/>
-          <h4 className="text">Let's cook, create, and connect together!</h4>
-          <img src={tadim} className='aboutusimages' alt=''/>
+            <p className="text">
+              cookIN' is everyone's ultimate destination for discovering recipes. We believe that cooking should be enjoyable and accessible, that's why you can find any recipe based on the main ingredient, meal or event type, and even difficulty level. We aim to prove that everyone can be a chef of their own kitchen!
+            </p>
+            <p className="text" style={{padding:"20px"}}>
+              Whether you're looking for inspiration, guidance, or simply a place to share your love of food, cookIN' is here to help you on your culinary journey.
+            </p>
         </div>
         <div>
-          <h2 className="title">Connect with other Food Lovers</h2>
-          <p className="text">
-            cookIN' is more than just a recipe website. It's a community, a social platform for people who love to share their passion for cooking. You can add your own recipes to the website, save a recipe, like recipes, and comment on them by signing in. If you don't have an account, you can easily sign up!
-          </p>
-          <img src={sef} className='aboutusimages' alt=''/>
-          <div className="section-3">
-            <div className="skills">
-              <h2 className="title">Positive Aspects of cookIN'</h2>
-              <ul>
-                <li><p className="text">Discover recipes</p></li>
-                <li><p className="text">Time management in the kitchen</p></li>
-                <li><p className="text">Following cooking techniques and instructions</p></li>
-                <li><p className="text">Experimenting with new ingredients and cooking methods</p></li>
-                <li><p className="text">Sharing cooking tips and tricks</p></li>
-                <li><p className="text">Hosting culinary events</p></li>
-                <li><p className="text">Connect with food lovers</p></li>
-              </ul>
-            </div>
-          </div>
+        <img src={tadim} className='aboutusimages' alt='' style={{padding:"20px"}} />
+        </div>
+        <div>
+        <h2 className="title">Connect with other Food Lovers</h2>
+        <p className="text" >
+          cookIN' is more than just a recipe website. It's a community, a social platform for people who love to share their passion for cooking. You can add your own recipes to the website, save a recipe, like recipes, and comment on them by signing in. If you don't have an account, you can easily sign up!
+        </p>
         </div>
       </div>
+      <div className="right-section">
+        <div>
+        <img src={sofra} className='aboutusimages' alt='' style={{padding:"40px"}}/>
+        </div>
+        <div>
+        <h4 className="text" style={{padding:"100px"}}>Let's cook, create, and connect together!</h4>
+        </div>
+        <div>
+        <img src={sef} className='aboutusimages' alt=''/>
+        </div>
+      </div>
+    </div>
+    <div className="section-3">
+          <div className="skills">
+            <h2 className="footerTitle">Positive Aspects of cookIN'</h2>
+            <ul>
+              <li><p className="skills-text">Discover recipes</p></li>
+              <li><p className="skills-text">Time management in the kitchen</p></li>
+              <li><p className="skills-text">Following cooking techniques and instructions</p></li>
+              <li><p className="skills-text">Experimenting with new ingredients and cooking methods</p></li>
+              <li><p className="skills-text">Sharing cooking tips and tricks</p></li>
+              <li><p className="skills-text">Hosting culinary events</p></li>
+              <li><p className="skills-text">Connect with food lovers</p></li>
+            </ul>
+          </div>
+    </div>
+    <div>
       <div className="footer">
         <div className="footer-section">
-          <p className="title">cookIN'</p>
-          <p>cookIN' for yourself and your loved ones tasty dishes using the recipes on our website. cookIN' is your go-to destination for mouthwatering recipes and culinary inspiration.</p>
+          <p className="footerTitle">cookIN'</p>
+          <p style={{textAlign:'center'}}>cookIN' for yourself and your loved ones tasty dishes using the recipes on our website. cookIN' is your go-to destination for mouthwatering recipes and culinary inspiration.</p>
         </div>
         <div className="footer-section">
-          <p className="title">Who Are We?</p>
-          <p>Aleyna İslamoğlu</p>
-          <p>Irmak Kara</p>
-          <p>Dilruba Kaya</p>
-          <p>Irmak Koç</p>
+          <p className="footerTitle">Who Are We?</p>
+          <p style={{textAlign:'center'}}>Aleyna İslamoğlu</p>
+          <p style={{textAlign:'center'}}>Irmak Kara</p>
+          <p style={{textAlign:'center'}}>Dilruba Kaya</p>
+          <p style={{textAlign:'center'}}>Irmak Koç</p>
         </div>
         <div className="footer-section">
-          <p className="title">Contact Us</p>
-          <p>cookin@mail.com</p>
+          <p className="footerTitle">Contact Us</p>
+          <p style={{textAlign:'center'}}>cookin@mail.com</p>
         </div>
+      </div>
       </div>
     </div>
     );

@@ -23,6 +23,7 @@
     place-items: center;
     text-align: center;
     align-items: center;
+    margin: auto;
   }
   
   .text{
@@ -30,6 +31,7 @@
     place-items: center;
     text-align: center;
     align-items: center;
+    margin: auto;
   }
   
   .footer{
@@ -72,8 +74,30 @@
     list-style-type: disc;
   }
 
+  
+  .skills li {
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+  }
+  
+  .skills li::before {
+    content: '•';
+    color: gray;
+    margin-right: 40px;
+    font-size: 1rem;
+    vertical-align: center;
+  }
+  
   .skills li::marker {
     color: gray;
+    text-align: center;
+    display: inline-block;
+    vertical-align: center;
+  }
+
+  .skills-text{
+    font-family: 'Garamond', serif;
   }
 
   .footerTitle{
@@ -86,7 +110,24 @@
     margin-top: 0;
     margin-left: auto;
     margin-right:auto;
-    width: 300px; 
-    height: 300px;
-    place-items: center;
+    width: 450px; 
+    height: 400px;
   }
+
+  .container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 2;
+    margin-left: 100px;
+    padding-bottom: 200px;
+  }
+  
+  .right-section {
+    flex: 2;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding-bottom: 0;
+  }
+  
