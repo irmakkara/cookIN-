@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cookINlogo from './images/cookINlogo.png';
 import sademakarna from './images/sademakarna.png';
+import nate from './images/natefisher.png';
+import theo from './images/theo.png';
 import './App.css';
 
 function Recipe1() {
@@ -11,7 +14,7 @@ function Recipe1() {
         {
             id: 1,
             title: "Makarna",
-            summary: "Sade makarna.",
+            summary: "Önce tencerede su kaynatılır. Daha sonra bir paket makarna kaynar suya dökülür. Sonra yağ ve tuz eklenir. Paketteki pişme süresi kadar pişirilir. Daha sonra süzülür ve bir süre daha haşlanır.",
             ingridients: "1 paket makarna, 1 tencere su, tuz, tereyağ.",
             eventType: "Parti.",
             type: "Pasta Recipes.",
@@ -59,23 +62,70 @@ function Recipe1() {
           </form>
         </Navbar.Collapse>
     </Navbar>
-            <div className='savedRecipes' id='root'>
-                {recipes.map(recipe => (
-                    <div key={recipe.id}>
-                      <div>
-                        <img src={recipe.imgURL} className='homepageimages'alt=''/>
-                      </div>
-                      <strong>{recipe.title}</strong>
-                      <p>{recipe.summary}</p>
-                      <p>{recipe.ingridients}</p>
-                      <p>{recipe.time}</p>
-                      <p>{recipe.difficultiyLevel}</p>
-                      <p>{recipe.eventType}</p>
-                      <p>{recipe.type}</p>
+    <div className='svdrcps' id='root'>
+            {recipes.map(recipe => (
+                <Card key={recipe.id} style={{ maxWidth: '540px' }} className="mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <Card.Img src={recipe.imgURL} className='homepageimages' alt='' />
+                        </div>
+                        <div className="col-md-8">
+                            <Card.Body>
+                                <Card.Title>{recipe.title}</Card.Title>
+                                <Card.Text>{recipe.summary}</Card.Text>
+                                <Card.Text><strong>Ingredients:</strong> {recipe.ingridients}</Card.Text>
+                                <Card.Text><strong>Time:</strong> {recipe.time}</Card.Text>
+                                <Card.Text><strong>Difficulty Level:</strong> {recipe.difficultiyLevel}</Card.Text>
+                                <Card.Text><strong>Event Type:</strong> {recipe.eventType}</Card.Text>
+                                <Card.Text><strong>Type:</strong> {recipe.type}</Card.Text>
+                            </Card.Body>
+                        </div>
                     </div>
-                ))}
+                </Card>
+            ))}
+      </div>
+      <section>
+        <div className='comments'>
+        <div className="container my-5 py-5 text-body">
+          <div className="row d-flex justify-content-center">
+            <div className="col-md-11 col-lg-9 col-xl-7">
+                <div className="d-flex flex-start mb-4">
+                    <img className="rounded-circle shadow-1-strong me-3"
+                      src={theo} alt="avatar" width="65"
+                      height="65" 
+                    />
+                    <div className="card w-100" style={{ maxWidth: '1000px' , maxHeight: '1000px'}}>
+                        <div className="card-body p-4">
+                            <div className="">
+                              <h5>Theo James</h5>
+                              <p className="small">3 hours ago</p>
+                              <p>tarifin çok güzel. evdeki herkes bayıldı. ellerinize sağlık.</p>
+                                <a href="#!" className="link-muted"><i className="fas fa-reply me-1"></i> Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="d-flex flex-start">
+                    <img className="rounded-circle shadow-1-strong me-3"
+                      src={nate} alt="avatar" width="65"
+                      height="65" 
+                    />
+                    <div className="card w-100" style={{ maxWidth: '1000px', maxHeight: '1000px' }}>
+                      <div className="card-body p-4" >
+                        <div className="">
+                          <h5>Nate Fisher</h5>
+                          <p className="small">5 hours ago</p>
+                          <p>çok faydalı bir tarif. bundan sonra hep kullanacağım.</p>
+                          <a href="#!" className="link-muted"><i className="fas fa-reply me-1"></i> Reply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <div>
+          </div>
+        </div>
+      </section>
       <div className="footer">
         <div className="footer-section">
           <p className="footerTitle">cookIN'</p>
@@ -93,9 +143,9 @@ function Recipe1() {
           <p style={{textAlign:'center'}}>cookin@mail.com</p>
         </div>
       </div>
-    </div>
-        </div>
+    </div>    
     )
+  
 }
 
 export default Recipe1;
