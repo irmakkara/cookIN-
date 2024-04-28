@@ -23,7 +23,7 @@ function MainPage() {
     <div>
     <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
       <Navbar.Brand>
-        <img src={cookINlogo} width={100} height={100} className="image"/>
+        <img src={cookINlogo} width={100} height={100} className="image" alt=''/>
       </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -61,7 +61,7 @@ function MainPage() {
     <h2 className='homepagetitle'>Recent Recipes</h2>
       {savedRecipes.map(recipe => (
         <div key={recipe.id} className="recipeItem">
-          <img src={recipe.imageUrl} className='homepageimages'/>
+          <img src={recipe.imageUrl} className='homepageimages' alt=''/>
           <div>
             <Link to={`/Recipe${recipe.id}`}>
               <strong>{recipe.title}</strong>

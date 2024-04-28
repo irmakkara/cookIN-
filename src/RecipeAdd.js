@@ -50,7 +50,7 @@ const RecipeAdd = () => {
     <div>
       <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
         <Navbar.Brand>
-          <img src={cookINlogo} width={100} height={100} className="image" alt="CookIN logo" />
+          <img src={cookINlogo} width={100} height={100} className="image" alt='' />
         </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />

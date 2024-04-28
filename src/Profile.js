@@ -66,7 +66,7 @@ function Profile() {
     <div>
     <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
       <Navbar.Brand>
-        <img src={cookINlogo} width={100} height={100} className="image"/>
+        <img src={cookINlogo} width={100} height={100} className="image" alt=''/>
       </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -100,7 +100,7 @@ function Profile() {
         </Navbar.Collapse>
     </Navbar>
     <div className="content" id='root'>
-      <div className="btnAddRecipe"> {/*burda ne yapsam olmuyo sağ tarafa taşıyamadım yani. */}
+      <div className="btnAddRecipe">
         <Link to="/AddRecipe" className="btn btn-log in"><strong>Add Recipe.</strong></Link>
       </div>
       <div className="profile">
