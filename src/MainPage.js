@@ -58,22 +58,32 @@ function MainPage() {
         </Navbar.Collapse>
     </Navbar>
     <div className='savedRecipes' id='root'>
-    <h2 className='homepagetitle'>Recent Recipes</h2>
-      {savedRecipes.map(recipe => (
-        <div key={recipe.id} className="recipeItem">
-          <img src={recipe.imageUrl} className='homepageimages' alt=''/>
-          <div>
-            <Link to={`/Recipe${recipe.id}`}>
-              <strong>{recipe.title}</strong>
+      <h1 className='homepagetitle'>Recent Recipes</h1>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {savedRecipes.map(recipe => (
+        <div key={recipe.id} className="col mb-4">
+          <div className="card border-secondary mb-3" style={{ maxWidth: '27rem' }}>
+            <div className="card-header">{recipe.title}</div>
+            <img
+              src={recipe.imageUrl}
+              className='card-img-top img-fluid'
+              alt={recipe.title}
+              style={{ height: '200px', objectFit: 'cover' }}
+            />
+            <div className="card-body text-secondary">
+            <p className="card-text">{recipe.summary}</p>
+            <Link to={`/Recipe${recipe.id}`} className="btn btn-secondary">
+              View Recipe
             </Link>
             </div>
-        <p>{recipe.summary}</p>
-        <br></br>
-        <br></br>
+            <div className="card-footer">
+              <small className="text-muted">Last updated {recipe.id} mins ago</small>
+            </div>
+          </div>
+        </div>
+        ))}
       </div>
-      ))}
     </div>
-    <div>
       <div className="footer">
         <div className="footer-section">
           <p className="footerTitle">cookIN'</p>
@@ -92,7 +102,6 @@ function MainPage() {
         </div>
       </div>
     </div>
-  </div>
   );
 }
 

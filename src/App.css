@@ -146,4 +146,22 @@
 .homepagetitle{
   font-family: 'Garamond', serif;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
+
+.card {
+  display: inline-block;
+  width: 80%;
+  max-width: 200px;
+}
+
+.row-cols-lg-3 {
+  justify-content: center;
+}
+
+.col.mb-4 {
+  margin-left: 20px; 
+}
+
+
