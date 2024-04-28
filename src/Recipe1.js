@@ -25,7 +25,7 @@ function Recipe1() {
         <div>
     <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
       <Navbar.Brand>
-        <img src={cookINlogo} width={100} height={100} className="image"/>
+        <img src={cookINlogo} width={100} height={100} className="image" alt=''/>
       </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -63,7 +63,7 @@ function Recipe1() {
                 {recipes.map(recipe => (
                     <div key={recipe.id}>
                       <div>
-                        <img src={recipe.imgURL} className='homepageimages'/>
+                        <img src={recipe.imgURL} className='homepageimages'alt=''/>
                       </div>
                       <strong>{recipe.title}</strong>
                       <p>{recipe.summary}</p>

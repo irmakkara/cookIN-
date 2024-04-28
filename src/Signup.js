@@ -24,7 +24,7 @@ function Signup() {
       <div>
     <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
       <Navbar.Brand>
-        <img src={cookINlogo} width={100} height={100} className="image"/>
+        <img src={cookINlogo} width={100} height={100} className="image" alt=''/>
       </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -66,6 +66,10 @@ function Signup() {
             <div className="mb-3">
               <label htmlFor="Surname" className="form-label"><strong>Surname</strong></label>
               <input type="Surname" placeholder='Enter your surname' className="form-control rounded-0" />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Username" className="form-label"><strong>Username</strong></label>
+              <input type="Username" placeholder='Enter your username' className="form-control rounded-0" />
             </div>
             <div className="mb-3">
               <label htmlFor="email" className="form-label"><strong>Email</strong></label>

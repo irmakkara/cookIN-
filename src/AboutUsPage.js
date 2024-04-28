@@ -13,7 +13,7 @@ function AboutUsPage() {
     <div>
         <Navbar bg="body-tertiary" expand="lg" className='navbarContainer'>
       <Navbar.Brand>
-        <img src={cookINlogo} width={100} height={100} className="image"/>
+        <img src={cookINlogo} width={100} height={100} className="image" alt=''/>
       </Navbar.Brand>
         <Navbar.Brand>cookIN'</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -54,16 +54,16 @@ function AboutUsPage() {
           <p className="text">
             Whether you're looking for inspiration, guidance, or simply a place to share your love of food, cookIN' is here to help you on your culinary journey.
           </p>
-          <img src={sofra} className='aboutusimages'/>
+          <img src={sofra} className='aboutusimages' alt=''/>
           <h4 className="text">Let's cook, create, and connect together!</h4>
-          <img src={tadim} className='aboutusimages'/>
+          <img src={tadim} className='aboutusimages' alt=''/>
         </div>
         <div>
           <h2 className="title">Connect with other Food Lovers</h2>
           <p className="text">
             cookIN' is more than just a recipe website. It's a community, a social platform for people who love to share their passion for cooking. You can add your own recipes to the website, save a recipe, like recipes, and comment on them by signing in. If you don't have an account, you can easily sign up!
           </p>
-          <img src={sef} className='aboutusimages'/>
+          <img src={sef} className='aboutusimages' alt=''/>
           <div className="section-3">
             <div className="skills">
               <h2 className="title">Positive Aspects of cookIN'</h2>
