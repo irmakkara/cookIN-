@@ -22,26 +22,22 @@ function AboutUsPage() {
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href="/profile">Profile</Nav.Link>
             <NavDropdown title="Recipes" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/ReBr">Recipes for Breakfast</NavDropdown.Item>
-              <NavDropdown.Item href="/ReSoup">Soup Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="/ReSalad">Salad Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="/RePasta">Pasta Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="/ReRice">Rice Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="/ReMeat">Meat Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="/ReCh">Chicken Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="ReVeg">Vegetable Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="ReFish">Fish Recipes</NavDropdown.Item>
-              <NavDropdown.Item href="ReDess">Dessert Recipes</NavDropdown.Item>
+            <NavDropdown.Item href="/Re?recipetypeid=1">Recipes for Breakfast</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=2">Soup Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=3">Salad Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=4">Pasta Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=5">Rice Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=6">Meat Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=7">Chicken Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=8">Vegetable Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=9">Fish Recipes</NavDropdown.Item>
+              <NavDropdown.Item href="/Re?recipetypeid=10">Dessert Recipes</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Recipes for Events" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/ReParty">Recipes for a Party</NavDropdown.Item>
-              <NavDropdown.Item href="/ReGN">Recipes for a Game Night</NavDropdown.Item>
+              <NavDropdown.Item href="/Ev?eventtypeid=1">Recipes for a Party</NavDropdown.Item>
+              <NavDropdown.Item href="/Ev?eventtypeid=1">Recipes for a Game Night</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btnSearch" type="submit">Search</button>
-          </form>
         </Navbar.Collapse>
     </Navbar>
     <h1 className="home-title">What is cookIN' ?</h1>

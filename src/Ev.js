@@ -7,7 +7,11 @@ import cookINlogo from './images/cookINlogo.png';
 import './AboutPageUS.css';
 import './App.css';
 
-function MainPage() {
+function Re() {
+  const search = window.location.search;
+  const query = new URLSearchParams(search);
+  const eventtypeId = query.get('eventtypeid');
+
   const placeholderImageUrl = "https://via.placeholder.com/150";
 
   const [savedRecipes, setSavedRecipes] = useState([]);
@@ -15,7 +19,7 @@ function MainPage() {
   useEffect(() => {
     const fetchSavedRecipes = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/recipes');
+        const response = await axios.get('http://localhost:8080/api/recipes/EventType/'+eventtypeId);
         setSavedRecipes(response.data);
       } catch (error) {
         console.error('Error fetching saved recipes:', error);
@@ -104,4 +108,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default Re;

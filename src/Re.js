@@ -7,7 +7,11 @@ import cookINlogo from './images/cookINlogo.png';
 import './AboutPageUS.css';
 import './App.css';
 
-function MainPage() {
+function Re() {
+  const search = window.location.search;
+  const query = new URLSearchParams(search);
+  const recipeId = query.get('recipetypeid');
+
   const placeholderImageUrl = "https://via.placeholder.com/150";
 
   const [savedRecipes, setSavedRecipes] = useState([]);
@@ -15,7 +19,7 @@ function MainPage() {
   useEffect(() => {
     const fetchSavedRecipes = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/recipes');
+        const response = await axios.get('http://localhost:8080/api/recipes/RecipeType/'+recipeId);
         setSavedRecipes(response.data);
       } catch (error) {
         console.error('Error fetching saved recipes:', error);
@@ -38,7 +42,7 @@ function MainPage() {
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href="/profile">Profile</Nav.Link>
             <NavDropdown title="Recipes" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Re?recipetypeid=1">Recipes for Breakfast</NavDropdown.Item>
+            <NavDropdown.Item href="/Re?recipetypeid=1">Recipes for Breakfast</NavDropdown.Item>
               <NavDropdown.Item href="/Re?recipetypeid=2">Soup Recipes</NavDropdown.Item>
               <NavDropdown.Item href="/Re?recipetypeid=3">Salad Recipes</NavDropdown.Item>
               <NavDropdown.Item href="/Re?recipetypeid=4">Pasta Recipes</NavDropdown.Item>
@@ -104,4 +108,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default Re;
